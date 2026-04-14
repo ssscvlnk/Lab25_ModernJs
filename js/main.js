@@ -88,21 +88,35 @@
 // console.log("Первое число:", first);
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
-const num1 = [1,3,5,7,9];
-const num2 = [2,4,6,8];
-const combined2 = [...num1, ...num2];
-console.log("Объединенный массив:", combined2);
-function findMax(...numbers) {
-  return Math.max(...numbers);
-}
-console.log(findMax(...combined2));
-const iPhone = {
-    name: "iPhone",
-    price: 100000
-  };
-  const iPad = {
-    name1: "iPad",
-    price1: 60000
-  };
-  const fullInfo = {...iPad, ...iPhone};
-  console.log("Полная информация", fullInfo);
+// const num1 = [1,3,5,7,9];
+// const num2 = [2,4,6,8];
+// const combined2 = [...num1, ...num2];
+// console.log("Объединенный массив:", combined2);
+// function findMax(...numbers) {
+//   return Math.max(...numbers);
+// }
+// console.log(findMax(...combined2));
+// const iPhone = {
+//     name: "iPhone",
+//     price: 100000
+//   };
+//   const iPad = {
+//     name1: "iPad",
+//     price1: 60000
+//   };
+//   const fullInfo = {...iPad, ...iPhone};
+//   console.log("Полная информация", fullInfo);
+// import { greet, add, PI } from "./utils.js";
+// console.log("Модули");
+// console.log(greet("Алексей"));
+// console.log("5 + 3 =", add(5, 3));
+// console.log("Значение PI:", PI);
+// import { multiply as умножить } from "./utils.js";
+// console.log("4 * 7 =", умножить(4, 7));
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+import { cube, square, E } from "./math.js";
+console.log("3 в квадрате:", square(3));
+console.log("3 в кубе:", cube(3));
+console.log("Значение Е:", E);
